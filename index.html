@@ -2720,15 +2720,15 @@ function aturDropdownKelas(user) {
   const semuaKelas = [  "kelas_012026","kelas_022026","kelas_032026","kelas_042026","kelas_052026","kelas_062026",
     "kelas_072026","kelas_082026","kelas_092026"];
 
-  const namaKelasCustom = {  kelas_012026: "Ust. Abdurrahman Bisri",
-  kelas_022026: "Ust. Aslam",
-  kelas_032026: "Ust. Asnur Alim Mulia",
-  kelas_042026: "Ust. Amal Rais",
-  kelas_052026: "Ust. Fitra Tunnisa",
-  kelas_062026: "Ust. Sri Safitri",
-  kelas_072026: "Ust. Justi Tambiang",
-  kelas_082026: "Ust. Sulpiana",
-  kelas_092026: "Ust. Amalia Isla"};
+  const namaKelasCustom = {  kelas_012026: "Ustadz Abdurrahman Bisri",
+  kelas_022026: "Ustadz Aslam",
+  kelas_032026: "Ustadz Asnur Alim Mulia",
+  kelas_042026: "Ustadz Amal Rais",
+  kelas_052026: "Ustdzah Fitra Tunnisa",
+  kelas_062026: "Ustdzah Sri Safitri",
+  kelas_072026: "Ustdzah Justi Tambiang",
+  kelas_082026: "Ustdzah Sulpiana",
+  kelas_092026: "Ustdzah Amalia Isla"};
 
   kelasSelect.innerHTML = "";
 
@@ -5215,15 +5215,15 @@ function keteranganDisplayForKey(key, fallback){
   // === Helper Kelas/Kelompok ===
 function buildKelasKelompokLine(kelas, kelasEl) {
   const kelasNum = (String(kelas||'').match(/(\d+)/)?.[1]) || (kelas || '-');
-  const custom = window.namaKelasCustom || window.NAMA_KELAS_CUSTOM || {  kelas_012026: "Ust. Abdurrahman Bisri",
-  kelas_022026: "Ust. Aslam",
-  kelas_032026: "Ust. Asnur Alim Mulia",
-  kelas_042026: "Ust. Amal Rais",
-  kelas_052026: "Ust. Fitra Tunnisa",
-  kelas_062026: "Ust. Sri Safitri",
-  kelas_072026: "Ust. Justi Tambiang",
-  kelas_082026: "Ust. Sulpiana",
-  kelas_092026: "Ust. Amalia Isla"};
+  const custom = window.namaKelasCustom || window.NAMA_KELAS_CUSTOM || {  kelas_012026: "Ustadz Abdurrahman Bisri",
+  kelas_022026: "Ustadz Aslam",
+  kelas_032026: "Ustadz Asnur Alim Mulia",
+  kelas_042026: "Ustadz Amal Rais",
+  kelas_052026: "Ustdzah Fitra Tunnisa",
+  kelas_062026: "Ustdzah Sri Safitri",
+  kelas_072026: "Ustdzah Justi Tambiang",
+  kelas_082026: "Ustdzah Sulpiana",
+  kelas_092026: "Ustdzah Amalia Isla"};
     let kelompok = custom[kelas] || "";
     if (!kelompok) {
       const optText = kelasEl?.options?.[kelasEl.selectedIndex]?.text?.trim() || "";
